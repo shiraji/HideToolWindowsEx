@@ -1,0 +1,70 @@
+<idea-plugin version="2">
+    <id>com.github.shiraji.hidetoolwindowsex</id>
+    <name>Hide Tool Windows Ex</name>
+    <version>0.0.1</version>
+    <vendor email="isogai.shiraji@gmail.com" url="https://github.com/shiraji">Shiraji</vendor>
+
+    <description><![CDATA[
+        This plugin adds the functionality to hide tool windows when the developer start typing. It has the same functionality to hide (all/side) tool windows including restorin the windows.<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <p>0.0.1</p>
+        <ul>
+            <li>Initial release</li>
+        <ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <typedHandler implementation="com.github.shiraji.hidetoolwindowsex.handler.HideToolWindowsExHandler"/>
+        <applicationService serviceImplementation="com.github.shiraji.hidetoolwindowsex.config.HideToolWindowsExConfig"
+                            serviceInterface="config.PluginConfig"/>
+
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="ActionGroup" text="Hide Tool Windows Ex" popup="true">
+
+            <action id="action.RestoreToolWindows"
+                    class="com.github.shiraji.hidetoolwindowsex.action.HideRestoreToolWindowsAction"
+                    text="Hide/Restore"/>
+
+            <separator/>
+
+            <action id="HideRightToolWindowsToggleAction"
+                    class="com.github.shiraji.hidetoolwindowsex.action.HideRightToolWindowsToggleAction"
+                    text="Hide Right Tool Windows"/>
+            <action id="HideLeftToolWindowsToggleAction"
+                    class="com.github.shiraji.hidetoolwindowsex.action.HideLeftToolWindowsToggleAction"
+                    text="Hide Left Tool Windows"/>
+            <action id="HideBottomToolWindowsToggleAction"
+                    class="com.github.shiraji.hidetoolwindowsex.action.HideBottomToolWindowsToggleAction"
+                    text="Hide Bottom Tool Windows"/>
+
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </group>
+
+
+    </actions>
+
+</idea-plugin>
