@@ -15,7 +15,7 @@ public class HideToolWindowsExUtils {
 
     public static void hideOrRestore(Project project) {
         init(project);
-        hideToolWindows(project);
+        hideToolWindows();
 
         if (sIsHideToolWindow) {
             actionAfterHideToolWindows();
@@ -26,7 +26,7 @@ public class HideToolWindowsExUtils {
 
     public static void hide(Project project) {
         init(project);
-        hideToolWindows(project);
+        hideToolWindows();
 
         if (sIsHideToolWindow) {
             actionAfterHideToolWindows();
@@ -41,8 +41,8 @@ public class HideToolWindowsExUtils {
         sIsHideToolWindow = false;
     }
 
-    private static void hideToolWindows(Project project) {
-        HideToolWindowsExConfig config = HideToolWindowsExConfig.getInstance(project);
+    private static void hideToolWindows() {
+        HideToolWindowsExConfig config = HideToolWindowsExConfig.getInstance();
         for (String windowId : sToolWindowManager.getToolWindowIds()) {
             hideToolWindow(config, windowId);
         }

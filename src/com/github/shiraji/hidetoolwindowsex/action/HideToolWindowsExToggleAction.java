@@ -12,18 +12,13 @@ public abstract class HideToolWindowsExToggleAction extends ToggleAction {
 
     @Override
     public boolean isSelected(AnActionEvent anActionEvent) {
-        HideToolWindowsExConfig config = getPluginConfigFromActionEvent(anActionEvent);
+        HideToolWindowsExConfig config = HideToolWindowsExConfig.getInstance();
         return isHideToolWindows(config);
     }
 
     @Override
     public void setSelected(AnActionEvent anActionEvent, boolean b) {
-        HideToolWindowsExConfig config = getPluginConfigFromActionEvent(anActionEvent);
+        HideToolWindowsExConfig config = HideToolWindowsExConfig.getInstance();
         setHideToolWindows(config, b);
     }
-
-    private HideToolWindowsExConfig getPluginConfigFromActionEvent(AnActionEvent anActionEvent) {
-        return HideToolWindowsExConfig.getInstance(anActionEvent.getProject());
-    }
-
 }

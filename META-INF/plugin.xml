@@ -29,7 +29,7 @@
         <!-- Add your extensions here -->
         <typedHandler implementation="com.github.shiraji.hidetoolwindowsex.handler.HideToolWindowsExHandler"/>
         <applicationService serviceImplementation="com.github.shiraji.hidetoolwindowsex.config.HideToolWindowsExConfig"
-                            serviceInterface="config.PluginConfig"/>
+                            serviceInterface="com.github.shiraji.hidetoolwindowsex.config.HideToolWindowsExConfig"/>
 
     </extensions>
 
@@ -45,7 +45,7 @@
         <!-- Add your actions here -->
         <group id="ActionGroup" text="Hide Tool Windows Ex" popup="true">
 
-            <action id="action.RestoreToolWindows"
+            <action id="HideRestoreToolWindowsAction"
                     class="com.github.shiraji.hidetoolwindowsex.action.HideRestoreToolWindowsAction"
                     text="Hide/Restore"/>
 

@@ -1,7 +1,6 @@
 package com.github.shiraji.hidetoolwindowsex.config;
 
 import com.intellij.openapi.components.*;
-import com.intellij.openapi.project.Project;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.Nullable;
 
@@ -28,8 +27,8 @@ public class HideToolWindowsExConfig implements PersistentStateComponent<HideToo
     }
 
     @Nullable
-    public static HideToolWindowsExConfig getInstance(Project project) {
-        return ServiceManager.getService(project, HideToolWindowsExConfig.class);
+    public static HideToolWindowsExConfig getInstance() {
+        return ServiceManager.getService(HideToolWindowsExConfig.class);
     }
 
     public boolean isHideLeftToolWindow() {
