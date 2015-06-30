@@ -10,6 +10,10 @@ It also has the functionality to restore the tool windows.
 
 Use the IDE's plugin manager to install the latest version of the plugin.
 
+or
+
+[Download](https://github.com/shiraji/HideToolWindowsEx/blob/master/HideToolWindowsEx.jar?raw=true) jar file and then go to Preferences > Plugins > Install plugin from disk...
+
 ## Usage
 
 To hide/restore selected tool windows
@@ -39,13 +43,13 @@ You can migrate default's "Hide All Tool Windows" to "Hide/Restore"
 
 ## History
 
+### ver 0.0.2
+
+Fix the problem with startup
+
 ### ver 0.0.1
 
 Initial release
-
-## Size
-
-12 KB
 
 ## License
 

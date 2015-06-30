@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.github.shiraji.hidetoolwindowsex</id>
     <name>Hide Tool Windows Ex</name>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <vendor email="isogai.shiraji@gmail.com" url="https://github.com/shiraji">Shiraji</vendor>
 
     <description><![CDATA[
@@ -9,10 +9,15 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <p>0.0.2</p>
+        <ul>
+            <li>Fix the problem with initalization</li>
+        </ul>
+
         <p>0.0.1</p>
         <ul>
             <li>Initial release</li>
-        <ul>
+        </ul>
     ]]>
     </change-notes>
 
