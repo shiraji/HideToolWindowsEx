@@ -1,9 +1,6 @@
 # Created by https://www.gitignore.io
 
 ### Intellij ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-
-*.iml
 
 ## Directory-based project format:
 .idea/*
@@ -23,6 +20,7 @@
 !.idea/vcs.xml
 !.idea/modules.xml
 !.idea/misc.xml
+!.idea/runConfigurations/
 
 # Gradle:
 # .idea/gradle.xml
