@@ -43,9 +43,13 @@ You can migrate default's "Hide All Tool Windows" to "Hide/Restore"
 
 ## History
 
+### ver 0.0.3
+
+Fix the problem with trigger
+
 ### ver 0.0.2
 
-Fix the problem with startup
+Fix the problem with initialization
 
 ### ver 0.0.1
 
