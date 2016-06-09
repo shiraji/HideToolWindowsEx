@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.github.shiraji.hidetoolwindowsex</id>
     <name>Hide Tool Windows Ex</name>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <vendor email="isogai.shiraji@gmail.com" url="https://github.com/shiraji">Shiraji</vendor>
 
     <description><![CDATA[
@@ -9,6 +9,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <p>0.0.4</p>
+        <ul>
+            <li>Make this plugin available to all products</li>
+        </ul>
+
         <p>0.0.3</p>
         <ul>
             <li>Fix the problem with trigger</li>
